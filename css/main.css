@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Exo&subset=latin-ext,vietnamese');
+
+@-webkit-keyframes fade {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+html, body {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+	color: white;
+}
+body {
+	background-color: black;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2.5em 0;
+	background-color: #090032;
+	opacity: 0.67;
+}
+#logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+#topLinks {
+	color: black;
+	font-size: 2em;
+	padding-left: 12ch;
+	margin: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,54bef7+100 */
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(left, #feffff 0%, #54bef7 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #feffff 0%,#54bef7 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #feffff 0%,#54bef7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#54bef7',GradientType=1 ); /* IE6-9 */
+	display: flex;
+	flex-direction: row;
+}
+#topLinks > li {
+	display: inline-block;
+	flex: 1 1 auto;
+}
+#gallery {
+	height: 100vh;
+	background: no-repeat center;
+	background-size: contain;
+	transition: background-image 2s ease-in-out;
+}
+.gallery_desc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em;
+	background-color: rgba(0,0,0,0.45);
+	border-radius: 0.5em;
+	width: 50%;
+	height: 30%;
+	transition: opacity 2s ease-in-out;
+	-webkit-animation: fade 2s ease-in-out;
+	animation: fade 2s ease-in-out;
+}

@@ -4,7 +4,7 @@
 
 const GALLERY_PICS = ['images/screamziki.png', 'images/boldrobotfighters.jpg'];
 const GALLERY_DESCS = [
-	'<h1>The Mandelbots</h1><p>We are small team of dedicated designers, builders, and programmers, creating, testing, and using robots for competitions across the region.</p>',
+	'<h1>The Mandelbots</h1><p>We are a small team of dedicated designers, builders, and programmers, creating, testing, and using robots for competitions across the region.</p>',
 	'<h1>Robot Duelists</h1><p>Our robot is put to the test through a variety of challenges, both on its own and with human aid.</p>'
 ];
 

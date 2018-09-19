@@ -8,11 +8,13 @@ let curImgIdx = 0;
 
 function updateGallery() {
 	let images = document.getElementsByClassName('galleryImg');
-	document.querySelector('.galleryImg.active').classList.remove('active');
+	let prevActive = document.querySelector('.galleryImg.active');
+	if (prevActive) prevActive.classList.remove('active');
 	images[curImgIdx].classList.add('active');
 	
 	let galleryDescs = document.getElementsByClassName('galleryDesc');
-	document.querySelector('.galleryDesc.active').classList.remove('active');
+	prevActive = document.querySelector('.galleryDesc.active');
+	if (prevActive) prevActive.classList.remove('active');
 	galleryDescs[curImgIdx].classList.add('active');
 }
 

@@ -16,8 +16,8 @@ function updateGallery() {
 	prevActive = document.querySelector('.galleryDesc.active');
 	if (prevActive) prevActive.classList.remove('active');
 	galleryDescs[curImgIdx].classList.add('active');
+	
+	setTimeout(function () { ++curImgIdx; curImgIdx %= GALLERY_LEN; updateGallery(); }, 6000);
 }
 
-updateGallery();
-
-setInterval(function () { ++curImgIdx; curImgIdx %= GALLERY_LEN; updateGallery(); }, 6000);
+requestAnimationFrame(updateGallery);

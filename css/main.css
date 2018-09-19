@@ -84,7 +84,6 @@ header {
 	background-color: rgba(0,0,0,0.45);
 	border-radius: 0.5em;
 	width: 50%;
-	height: 30%;
 	transition: visibility 0s ease-in-out 2s, opacity 2s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
@@ -94,6 +93,7 @@ header {
 	visibility: visible;
 	transition-delay: 0s;
 }
+
 #mainContent {
 	padding: 1em;
 }

@@ -20,4 +20,4 @@ function updateGallery() {
 	setTimeout(function () { ++curImgIdx; curImgIdx %= GALLERY_LEN; updateGallery(); }, 6000);
 }
 
-requestAnimationFrame(updateGallery);
+updateGallery();

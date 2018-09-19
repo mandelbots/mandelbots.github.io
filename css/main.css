@@ -19,6 +19,9 @@ body {
 	clear: both;
 	display: table;
 }
+a {
+	color: #d7dcff;
+}
 header {
 	width: 100%;
 	padding: 2.5em 0;
@@ -135,4 +138,21 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 	transition-delay: 0s;
+}
+.blogEntry {
+	border-top: 3px solid white;
+	margin: 3em 0;
+	padding: 1em 0;
+}
+.blogWriter {
+	font-style: italic;
+}
+.blogWriter::before {
+	content: "Author: ";
+}
+.blogDate {
+	font-style: italic;
+}
+.blogDate::before {
+	content: "Written on ";
 }

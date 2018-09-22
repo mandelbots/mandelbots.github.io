@@ -17,6 +17,8 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00001a', endColorstr='#7416f7',GradientType=0 ); /* IE6-9 */
 	padding-bottom: 12em;
 	box-sizing: border-box;
+	-webkit-perspective: 1000px;
+	-webkit-backface-visibility: hidden;
 }
 .preload * {
 	transition: none !important;

@@ -176,3 +176,12 @@ footer {
 	background: linear-gradient(to right, rgba(0,183,234,0.5) 0%,rgba(0,158,195,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000b7ea', endColorstr='#00009ec3',GradientType=1 ); /* IE6-9 */
 }
+@media print {
+	header, footer { display: none; }
+	body {
+		color: black;
+	}
+	a {
+		color: #15176e;
+	}
+}

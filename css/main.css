@@ -184,4 +184,7 @@ footer {
 	a {
 		color: #15176e;
 	}
+	.blogEntry {
+		border-color: black;
+	}
 }

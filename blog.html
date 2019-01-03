@@ -30,6 +30,38 @@
 		</header>
 		<div id="mainContent">
 			<h1>The Mandelbots Blog</h1>
+			<div class="blogEntry" id="droidInvasion">
+				<h2>'Droid Invasion</h2>
+				
+				<p>Setting up the Android program has been anything but intuitive.</p>
+				
+				<p>Writing the initial teleop code was not too difficult, but a problem I encountered in doing so was that
+				the Android API level was stuck at level 23 (disallowing default interfaces in Java), which forced me to use
+				an abstract class `MandelbotsOpMode` instead of `IMandelbotsOpMode` (which would have allowed for both linear
+				and ticking opmodes). Deploying the code, however, has been a completely different story:</p>
+				
+				<ul>
+					<li>The proper Micro USB cable for flashing the Android phones had gone missing, so I have had to
+					provide my own.</li>
+					<li>To make matters worse, it took me quite a while to figure out how to properly flash the APK
+					onto the Androids. It turns out that the FTC Robot Controller app <em>is</em> embedded in the
+					robotics code repository, so we had to target the correct phone (it is the one on the robot).
+					Unfortunately, we thought that the Driver Station phone was the one to flash the APK to, which
+					led to infuritating "Unfortunately, the FTC Driver Station has stopped" errors.</li>
+					<li>The USB On-the-Go cable was hiding all the way back in a bin that was <em>supposed</em> to
+					hold the motors.</li>
+					<li>Configuring the motor controllers to work was a huge PITA, with both controllers not being
+					detected until we set their addresses to 1 and 3 on the left and right respectively, yielding
+					a number that is not exactly auspicious.</li>
+					<li>Naming the motors required us to cut the zip ties that we had already established, a
+					nuisance but hardly the most tedious part of deployment.</li>
+				</ul>
+				
+				<p>Thankfully, we have gotten the motion fully working, except for the rotation and strafing directions being
+				reversed (which, fortunately, is an easy fix).</p>
+				
+				<p>Written by <span class="blogWriter">Thanh-Phuong Tran</span> for <span class="blogDate">12/12/2018</span>, <span class="blogDate">12/19/2018</span>, <span class="blogDate">12/27/2018</span>, and <span class="blogDate">1/5/2019</span></p>
+			</div>
 			<div class="blogEntry" id="vikvikTheChooChooTrain">
 				<h2>Vikvik The Choo-Choo Train</h2>
 				

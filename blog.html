@@ -30,8 +30,58 @@
 		</header>
 		<div id="mainContent">
 			<h1>The Mandelbots Blog</h1>
+			<div class="blogEntry" id="chadAndBarbie">
+				<h2>Virgin/Chad Screwdrivers and Barbie Gears</h2>
+				
+				<p>The linear actuator kit (<a href="https://www.servocity.com/linear-actuator-kit-7-4-stroke-6-0-sec">https://www.servocity.com/linear-actuator-kit-7-4-stroke-6-0-sec</a>) has
+				arrived at long last. Hence, Nicholas and I went to work building the lift, which was now separate from the dump.</p>
+				
+				<p>Unfortunately, the kit as-is would not fit onto the robot, since the motor that powered the kit obstructed
+				two of the drive-train motors. Hence, we instead used a <a href="https://www.andymark.com/products/neverest-classic-motor-only">
+				Neverest am-3104 motor</a> with a <a href="https://www.andymark.com/products/neverest-sport-256-1-w-nub-output">
+				Neverest Sport 256:1 gearbox</a> and attached it to a long axle. This did the trick, but the problem was that the
+				lift would move too slowly with the standard gears (which took 40 seconds for the entire length; we did not take
+				into account speed when getting a gearbox). Hence, we had to experiment with gears for the linear actuator; the hard
+				part was the fact that the actuator gear shaft was different from the standard axle, greatly limiting the gears that
+				we could use. We eventually decided to use the plastic "Barbie gears" in the interim until we find better gears for the lift.</p>
+				
+				<p>To space the axles correctly, we bootlegged the motor mount using 3 bearings per screw, for a total of
+				12 (3×4) of them. We also had to zip-tie the axle so that the gears would not unmesh. In the end, the linear
+				actuator (at max power) would move the entire length in about 20 seconds.</p>
+				
+				<p>Nicholas installed the vertical lift along with a primitive claw to grip the handle on the robot. It works,
+					except that we need a better claw. He also tested my fix for robotics tele-op rotation direction (i.e. use <code>-rot</code> in place of <code>+rot</code>),
+					and found that it worked also. I have also found a fix for strafing direction (<code>-x</code> in place of <code>+x</code>), but I have yet to test that.</p>
+				
+				<div class="figureCont clearfix">
+					<figure>
+						<div class="videoContainer">
+							<img src="images/robot_lift_snapshot.jpg" style="width: 15ch;" alt="Snapshot of robot lift in action" />
+							<video controls width="232" height="424" poster="images/robot_lift_snapshot.jpg">
+								<source src="videos/robot_lift.mp4" type="video/mp4" />
+								<p><a href="videos/robot_lift.mp4">Video link</a></p>
+							</video>
+						</div>
+						<figcaption>The robot lift in action</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/robot_initial_lift.jpg" style="width: 30ch;" alt="Robot lift with initial gears, which were too slow" />
+						<figcaption>Robot lift with initial gears, which were too slow</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/robot_lift_geardown.jpg" style="width: 30ch;" alt="Robot lift with geared-down Barbie gears" />
+						<figcaption>Robot lift with geared-down Barbie gears</figcaption>
+					</figure>
+				</div>
+				
+				<p>Written by <span class="blogWriter">Thanh-Phuong Tran</span> for <span class="blogDate">1/5/2019</span></p>
+			</div>
 			<div class="blogEntry" id="droidInvasion">
 				<h2>'Droid Invasion</h2>
+				
+				<p>(Note: The source code for the Mandlebot's Rover Ruckus program is at <a href="https://github.com/mandelbots/2k18">https://github.com/mandelbots/2k18</a>.)</p>
 				
 				<p>Setting up the Android program has been anything but intuitive.</p>
 				
@@ -60,7 +110,7 @@
 				<p>Thankfully, we have gotten the motion fully working, except for the rotation and strafing directions being
 				reversed (which, fortunately, is an easy fix).</p>
 				
-				<p>Written by <span class="blogWriter">Thanh-Phuong Tran</span> for <span class="blogDate">12/12/2018</span>, <span class="blogDate">12/19/2018</span>, <span class="blogDate">12/27/2018</span>, and <span class="blogDate">1/5/2019</span></p>
+				<p>Written by <span class="blogWriter">Thanh-Phuong Tran</span> for <span class="blogDate">12/12/2018</span>, <span class="blogDate">12/19/2018</span>, <span class="blogDate">12/27/2018</span>, and <span class="blogDate">1/2/2019</span></p>
 			</div>
 			<div class="blogEntry" id="vikvikTheChooChooTrain">
 				<h2>Vikvik The Choo-Choo Train</h2>
